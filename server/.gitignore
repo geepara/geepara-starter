@@ -31,8 +31,10 @@ npm-debug.log
 
 .DS_Store
 
-.env**
-^\.env(?!\.example$).*
+# Ignore all .env files
+.env*
+# But don't ignore .env.example
+!.env.example
 
 dist
 
