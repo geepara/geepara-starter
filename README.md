@@ -55,6 +55,8 @@ DATABASE_URL=postgresql://geepara-starter...
 7. Generate and push the drizzle schema to the database
 
 ```bash
+cd server
+yarn
 yarn drizzle:generate
 yarn drizzle:push
 ```
