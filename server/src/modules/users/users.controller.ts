@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 
-const getCurrentUser = async (
+export const getCurrentUser = async (
   req: Request,
   res: Response,
   next: NextFunction,
@@ -10,8 +10,4 @@ const getCurrentUser = async (
   } catch (err) {
     next(err);
   }
-};
-
-export const userController = {
-  getCurrentUser,
 };
